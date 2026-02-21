@@ -1,0 +1,40 @@
+name: UiPath CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build-test-deploy:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install UiPath CLI
+        run: |
+          choco install uipath-cli -y
+
+      - name: Restore Dependencies
+        run: |
+          uipcli restore
+
+      - name: Run Tests
+        run: |
+          uipcli test
+
+      - name: Pack Project
+        run: |
+          uipcli pack . --output ./package
+
+      - name: Deploy to Orchestrator
+        run: |
+          uipcli deploy ./package/*.nupkg `
+            --accountName ${{ secrets.UIPATH_ACCOUNT_NAME }} `
+            --tenantName ${{ secrets.UIPATH_TENANT_NAME }} `
+            --clientId ${{ secrets.UIPATH_CLIENT_ID }} `
+            --clientSecret ${{ secrets.UIPATH_CLIENT_SECRET }} `
+            --folder ${{ secrets.UIPATH_FOLDER_NAME }}
