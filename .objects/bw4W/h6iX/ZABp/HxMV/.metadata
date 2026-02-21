@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sauce Labs Bike Light",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "HxMV6VLz-0CgrnVJcAQePA",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/HxMV6VLz-0CgrnVJcAQePA",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/ZABpJtgII0CO2NUwKh7ZLA",
+  "Created": "2025-12-09T14:02:29.1313362Z",
+  "Updated": "2025-12-09T14:02:29.1313362Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

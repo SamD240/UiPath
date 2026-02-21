@@ -1,0 +1,24 @@
+{
+  "dataVariationFileInfo": [
+    {
+      "filePath": ".variations\\LoginInvalidData.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\Products.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\LoginValidData.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\CreateUser.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\UpdateUser.json",
+      "dataVariationType": "File"
+    }
+  ]
+}

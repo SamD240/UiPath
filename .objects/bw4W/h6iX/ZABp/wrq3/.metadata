@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sauce Labs Bolt T-Shirt",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "wrq3LbJBjUmFCidEisttOw",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/wrq3LbJBjUmFCidEisttOw",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/ZABpJtgII0CO2NUwKh7ZLA",
+  "Created": "2025-12-09T14:02:29.0904046Z",
+  "Updated": "2025-12-09T14:02:29.0904046Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

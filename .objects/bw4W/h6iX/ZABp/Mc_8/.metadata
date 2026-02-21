@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Close Menu",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Mc_8deHE_0qzEd7gXJ4r7g",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/Mc_8deHE_0qzEd7gXJ4r7g",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/ZABpJtgII0CO2NUwKh7ZLA",
+  "Created": "2025-12-09T13:55:19.2122492Z",
+  "Updated": "2025-12-09T13:55:19.2122492Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

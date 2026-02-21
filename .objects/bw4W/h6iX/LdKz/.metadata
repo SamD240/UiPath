@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Swag Labs Checkout Overview",
+  "Type": "Screen",
+  "Id": "LdKz3L9y9kCfQnDyrK-QRQ",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/LdKz3L9y9kCfQnDyrK-QRQ",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/h6iXUY5G9EK-snaxgJ4Qjw",
+  "Created": "2025-12-09T13:55:19.5507637Z",
+  "Updated": "2025-12-09T13:55:19.5507637Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

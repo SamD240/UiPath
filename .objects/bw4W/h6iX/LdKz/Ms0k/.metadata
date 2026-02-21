@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Delivery vendor",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Ms0kbxBZ90q2LfIYXmivHA",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/Ms0kbxBZ90q2LfIYXmivHA",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/LdKz3L9y9kCfQnDyrK-QRQ",
+  "Created": "2025-12-09T13:55:19.5887678Z",
+  "Updated": "2025-12-09T13:55:19.5887678Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

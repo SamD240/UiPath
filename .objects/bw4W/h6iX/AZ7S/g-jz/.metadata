@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Checkout",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "g-jzu3w6e0qxKQJDxKxh7g",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/g-jzu3w6e0qxKQJDxKxh7g",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/AZ7SxeqjOESPZcH1W9zU7g",
+  "Created": "2025-12-09T13:55:19.3741681Z",
+  "Updated": "2025-12-09T13:55:19.3741681Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

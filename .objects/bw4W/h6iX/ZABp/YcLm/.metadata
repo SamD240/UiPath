@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sauce Labs Fleece Jacket",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "YcLmAkg_2kaRjcQoYQ-w2A",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/YcLmAkg_2kaRjcQoYQ-w2A",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/ZABpJtgII0CO2NUwKh7ZLA",
+  "Created": "2025-12-09T14:02:29.1588933Z",
+  "Updated": "2025-12-09T14:02:29.1588933Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

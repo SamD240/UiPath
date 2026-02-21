@@ -1,0 +1,12 @@
+[
+  {
+    "Username": "standard_user",
+    "Password": "secret_s",
+	"ErrorMessage": "Username and password do not match any user in this service"
+  },
+  {
+    "Username": "performance_glitch_user",
+    "Password": "secret_s",
+	"ErrorMessage": "Username and password do not match any user in this service"
+  }
+]

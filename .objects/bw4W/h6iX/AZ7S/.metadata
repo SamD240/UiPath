@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Swag Labs Cart",
+  "Type": "Screen",
+  "Id": "AZ7SxeqjOESPZcH1W9zU7g",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/AZ7SxeqjOESPZcH1W9zU7g",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/h6iXUY5G9EK-snaxgJ4Qjw",
+  "Created": "2025-12-09T13:55:19.3262994Z",
+  "Updated": "2025-12-09T13:55:19.3262994Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

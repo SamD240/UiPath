@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Chrome: Swag Labs Login",
+  "Type": "Screen",
+  "Id": "W_Kn5__tKESpSsm-tPb0Ew",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/W_Kn5__tKESpSsm-tPb0Ew",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/h6iXUY5G9EK-snaxgJ4Qjw",
+  "Created": "2025-12-09T13:45:00.1677786Z",
+  "Updated": "2025-12-09T13:55:18.971653Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "Username": "standard_user",
+    "Password": "secret_sauce",
+	"Product1": "Sauce Labs Backpack",
+	"Product2": "Sauce Labs Bike Light",
+	"Product3": "Sauce Labs Bolt T-Shirt",
+	"Product4": "Sauce Labs Fleece Jacket",
+	"Product5": "Sauce Labs Onesie",
+	"Product6": "Test.allTheThings() T-Shirt (Red)"
+  }
+]

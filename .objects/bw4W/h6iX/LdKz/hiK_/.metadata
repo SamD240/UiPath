@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Finish",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "hiK_v-DUI0qyL5zCUjlkeQ",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/hiK_v-DUI0qyL5zCUjlkeQ",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/LdKz3L9y9kCfQnDyrK-QRQ",
+  "Created": "2025-12-09T13:55:19.5692175Z",
+  "Updated": "2025-12-09T13:55:19.5692175Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

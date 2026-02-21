@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Cart",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "MdI7-dKdyE-LgV-FTM8inw",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/MdI7-dKdyE-LgV-FTM8inw",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/ZABpJtgII0CO2NUwKh7ZLA",
+  "Created": "2025-12-09T13:55:19.2338961Z",
+  "Updated": "2025-12-09T13:55:19.2338961Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

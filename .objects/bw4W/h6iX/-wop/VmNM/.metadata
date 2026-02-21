@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Postal Code",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "VmNMxS7KjkKuzRwPwed3ow",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/VmNMxS7KjkKuzRwPwed3ow",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/-wopIVe-3UuILCPsMxdBMw",
+  "Created": "2025-12-09T13:55:19.5305432Z",
+  "Updated": "2025-12-09T13:55:19.5305432Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

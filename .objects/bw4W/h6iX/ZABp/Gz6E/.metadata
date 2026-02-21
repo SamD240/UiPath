@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sauce Labs Onesie",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Gz6E_27l9U6xbcz_b2H5GA",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/Gz6E_27l9U6xbcz_b2H5GA",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/ZABpJtgII0CO2NUwKh7ZLA",
+  "Created": "2025-12-09T14:02:29.0037118Z",
+  "Updated": "2025-12-09T14:02:29.0037118Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

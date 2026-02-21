@@ -1,0 +1,13 @@
+﻿{
+  "Name": "All Items",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "kmwck8M3u02AqdFSpuuSVw",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/kmwck8M3u02AqdFSpuuSVw",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/ZABpJtgII0CO2NUwKh7ZLA",
+  "Created": "2025-12-09T13:55:19.1265534Z",
+  "Updated": "2025-12-09T13:55:19.1265534Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Swag Labs",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "r_USLKAixUmsgFhKm_AUIg",
+  "Reference": "RJQ7xGgK-0auCPEkWZgnzA/r_USLKAixUmsgFhKm_AUIg",
+  "ParentRef": "RJQ7xGgK-0auCPEkWZgnzA/ZABpJtgII0CO2NUwKh7ZLA",
+  "Created": "2025-12-09T13:55:19.2951077Z",
+  "Updated": "2025-12-09T13:55:19.2951077Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
