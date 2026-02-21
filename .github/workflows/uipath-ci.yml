@@ -17,11 +17,11 @@ jobs:
       - name: Download UiPath CLI
         run: |
           curl -L -o uipcli.zip https://github.com/UiPath/uipathcli/releases/latest/download/uipathcli-win.zip
-          powershell Expand-Archive uipcli.zip -DestinationPath
+          powershell Expand-Archive uipcli.zip -DestinationPath .
       - name: Restore Dependencies
         run: |
           .\uipcli.exe restore
-          
+
       - name: Install UiPath CLI
         run: |
           choco install uipath-cli -y
