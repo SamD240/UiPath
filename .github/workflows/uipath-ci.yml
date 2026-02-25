@@ -1,18 +1,67 @@
-name: UiPath CI - Self Hosted
+name: UiPath CI/CD Pipeline
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
-- name: Download UiPath CLI
-  run: |
-    Invoke-WebRequest -Uri "https://uipath.visualstudio.com/Public.Feeds/_artifacts/feed/UiPath-Official/NuGet/UiPath.CLI/overview/25.4.9414.17608" -OutFile uipcli.nupkg
+env:
+  UIPATH_CLI_VERSION: 25.4.9414.17608
+  UIPATH_CLI_URL: https://uipath.visualstudio.com/Public.Feeds/_artifacts/feed/UiPath-Official/NuGet/UiPath.CLI/overview
 
-- name: Extract UiPath CLI
-  run: |
-    Expand-Archive uipcli.nupkg -DestinationPath uipcli
+jobs:
+  build-deploy:
+    runs-on: self-hosted
 
-- name: Run UiPath CLI
-  run: |
-    .\uipcli\tools\uipcli.exe --version
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    # Cache UiPath CLI
+    - name: Cache UiPath CLI
+      uses: actions/cache@v4
+      id: cache-uipcli
+      with:
+        path: uipcli
+        key: uipcli-${{ env.UIPATH_CLI_VERSION }}
+
+    # Download CLI only if not cached
+    - name: Download UiPath CLI
+      if: steps.cache-uipcli.outputs.cache-hit != 'true'
+      shell: powershell
+      run: |
+        Invoke-WebRequest `
+          -Uri "${{ env.UIPATH_CLI_URL }}/${{ env.UIPATH_CLI_VERSION }}" `
+          -OutFile "uipcli.nupkg"
+
+        Expand-Archive "uipcli.nupkg" -DestinationPath "uipcli"
+
+    - name: Verify UiPath CLI
+      shell: powershell
+      run: |
+        .\uipcli\tools\uipcli.exe --version
+
+    # Restore Dependencies
+    - name: Restore Dependencies
+      shell: powershell
+      run: |
+        .\uipcli\tools\uipcli.exe restore ${{ github.workspace }}
+
+    # Pack Project
+    - name: Pack Project
+      shell: powershell
+      run: |
+        .\uipcli\tools\uipcli.exe pack ${{ github.workspace }} `
+          --output ${{ github.workspace }}\output
+
+    # Deploy to Orchestrator
+    - name: Deploy to Orchestrator
+      shell: powershell
+      run: |
+        .\uipcli\tools\uipcli.exe deploy ${{ github.workspace }}\output `
+          --accountName ${{ secrets.UIPATH_ACCOUNT_NAME }} `
+          --tenant ${{ secrets.UIPATH_TENANT_NAME }} `
+          --clientId ${{ secrets.UIPATH_CLIENT_ID }} `
+          --clientSecret ${{ secrets.UIPATH_CLIENT_SECRET }} `
+          --folder ${{ secrets.UIPATH_FOLDER_NAME }}
