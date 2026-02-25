@@ -5,44 +5,14 @@ on:
     branches:
       - main
 
-env:
-  PACKAGE_VERSION: "1.0.${{ github.run_number }}"
+- name: Download UiPath CLI
+  run: |
+    Invoke-WebRequest -Uri "https://uipath.visualstudio.com/Public.Feeds/_artifacts/feed/UiPath-Official/NuGet/UiPath.CLI/overview/25.4.9414.17608" -OutFile uipcli.nupkg
 
-jobs:
-  build-and-deploy:
-    runs-on: self-hosted   # 👈 IMPORTANT: uses your local machine runner
+- name: Extract UiPath CLI
+  run: |
+    Expand-Archive uipcli.nupkg -DestinationPath uipcli
 
-    steps:
-      # 1️⃣ Checkout repository
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      # 2️⃣ Verify UiPath CLI is installed
-      - name: Verify CLI
-        run: |
-          uipcli --version
-
-      # 3️⃣ Login to Orchestrator
-      - name: Login to Orchestrator
-        shell: powershell
-        run: |
-          uipcli auth login `
-            --url "${{ secrets.UIP_URL }}" `
-            --tenant "${{ secrets.UIP_TENANT }}" `
-            --org "${{ secrets.UIP_ORG }}" `
-            --client-id "${{ secrets.UIP_CLIENT_ID }}" `
-            --client-secret "${{ secrets.UIP_CLIENT_SECRET }}"
-
-      # 4️⃣ Pack UiPath Project
-      - name: Pack Project
-        shell: powershell
-        run: |
-          uipcli solution pack . `
-            --output "./output" `
-            --version "${{ env.PACKAGE_VERSION }}"
-
-      # 5️⃣ Publish Package to Orchestrator
-      - name: Publish Package
-        shell: powershell
-        run: |
-          uipcli solution publish "./output/*.nupkg"
+- name: Run UiPath CLI
+  run: |
+    .\uipcli\tools\uipcli.exe --version
