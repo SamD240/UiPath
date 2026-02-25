@@ -26,15 +26,22 @@ jobs:
         path: uipcli
         key: uipcli-${{ env.UIPATH_CLI_VERSION }}
 
+    - name: Install NuGet CLI
+      run: |
+        choco install nuget.commandline -y
+    
     - name: Download UiPath CLI
-      if: steps.cache-uipcli.outputs.cache-hit != 'true'
       shell: powershell
       run: |
-        Invoke-WebRequest `
-          -Uri "${{ env.UIPATH_CLI_URL }}/${{ env.UIPATH_CLI_VERSION }}" `
-          -OutFile "uipcli.zip"
+        nuget install UiPath.CLI `
+          -Version 23.10.8753.32995 `
+          -Source "https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json" `
+          -OutputDirectory .
     
-        Expand-Archive "uipcli.zip" -DestinationPath "uipcli"
+    - name: Verify CLI
+      shell: powershell
+      run: |
+        .\UiPath.CLI.23.10.8753.32995\tools\uipcli.exe --version
 
     - name: Verify UiPath CLI
       shell: powershell
